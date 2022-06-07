@@ -12,8 +12,8 @@
   "private": false,
   "scripts": {
     "dev": "vite example",
-    "build": "esbuild src/vuedraggable.js --bundle --sourcemap --external:vue --outfile=dist/vuedraggable.umd.js ",
-    "minify": "esbuild src/vuedraggable.js --bundle --minify --sourcemap --external:vue --outfile=dist/vuedraggable.umd.min.js ",
+    "build": "esbuild src/vuedraggable.js --bundle --sourcemap --format=esm --external:vue --outfile=dist/vuedraggable.umd.js ",
+    "minify": "esbuild src/vuedraggable.js --bundle --minify --sourcemap --format=esm --external:vue --outfile=dist/vuedraggable.umd.min.js ",
     "prepublishOnly": "npm run lint && npm run test:unit && npm run build:doc && npm run build:type && npm run build",
     "test:unit": "jest --coverage",
     "test:coverage": "jest --coverage --verbose && codecov",
